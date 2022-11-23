@@ -5,24 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c44e1931-570c-4add-858b-6fd766bda63d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/output/plastic-anisotropy.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/output/tensile-strength.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/output/total-elongation.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/output/vickers-hardness.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/output/yield-strength.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/plastic-anisotropy.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/tensile-strength.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/total-elongation.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/vickers-hardness.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/yield-strength.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/temperatures.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/times.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Chromosome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Parameters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/data/Problem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Activation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Crossover.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Initialisation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Mutation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Replacement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Selection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/output/plastic-anisotropy.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/output/plastic-anisotropy.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/output/tensile-strength.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/output/tensile-strength.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/output/total-elongation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/output/total-elongation.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/output/vickers-hardness.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/output/vickers-hardness.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,13 +63,44 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="me.sanderson.ea.Main" />
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Problem">
+    <configuration name="DataCleaning" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="me.sanderson.data.DataCleaning" />
       <module name="Research" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="me.sanderson.ea.*" />
+          <option name="PATTERN" value="me.sanderson.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FileManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="me.sanderson.ea.data.FileManager" />
+      <module name="Research" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.sanderson.ea.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Problem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="me.sanderson.ea.data.Problem" />
+      <module name="Research" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="me.sanderson.ea.data.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,7 +110,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Problem" />
+        <item itemvalue="Application.FileManager" />
+        <item itemvalue="Application.DataCleaning" />
       </list>
     </recent_temporary>
   </component>
@@ -100,6 +133,14 @@
       <workItem from="1666769150522" duration="46000" />
       <workItem from="1666769202827" duration="2728000" />
       <workItem from="1667939203227" duration="6475000" />
+      <workItem from="1668006220388" duration="4222000" />
+      <workItem from="1668012634281" duration="2996000" />
+      <workItem from="1669134178732" duration="549000" />
+      <workItem from="1669137112466" duration="694000" />
+      <workItem from="1669157606139" duration="179000" />
+      <workItem from="1669157796070" duration="879000" />
+      <workItem from="1669172783449" duration="2430000" />
+      <workItem from="1669175225781" duration="4570000" />
     </task>
     <servers />
   </component>
@@ -129,5 +170,10 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Research$Main.ic" NAME="Main Coverage Results" MODIFIED="1668011938918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>me.sanderson.ea.*</FILTER>
+    </SUITE>
   </component>
 </project>
