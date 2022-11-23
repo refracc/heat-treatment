@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c44e1931-570c-4add-858b-6fd766bda63d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/temperatures.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/times.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Chromosome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Parameters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/data/Problem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Activation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Crossover.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Initialisation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Mutation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Replacement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Selection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/output/plastic-anisotropy.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/output/plastic-anisotropy.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/output/tensile-strength.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/output/tensile-strength.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/output/total-elongation.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/output/total-elongation.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/output/vickers-hardness.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/output/vickers-hardness.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +123,7 @@
       <workItem from="1669157606139" duration="179000" />
       <workItem from="1669157796070" duration="879000" />
       <workItem from="1669172783449" duration="2430000" />
-      <workItem from="1669175225781" duration="4570000" />
+      <workItem from="1669175225781" duration="5710000" />
     </task>
     <servers />
   </component>

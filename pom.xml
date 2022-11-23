@@ -14,13 +14,6 @@
             <version>20.1.0</version>
             <scope>compile</scope>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/io.jenetics/jenetics -->
-        <dependency>
-            <groupId>io.jenetics</groupId>
-            <artifactId>jenetics</artifactId>
-            <version>7.1.1</version>
-        </dependency>
     </dependencies>
 
     <properties>
