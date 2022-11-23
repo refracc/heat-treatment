@@ -14,7 +14,7 @@ import java.util.List;
  */
 public class Chromosome {
 
-    private List<Point> points;
+    private final List<Point> points;
     private double fitness;
 
     /**
@@ -57,7 +57,7 @@ public class Chromosome {
      */
     public double evaluate() {
         this.fitness = 0.0d;
-        for (int i = 0; i < points.size(); i++) {
+        for (int i = 0; i < points.size() - 1; i++) {
             fitness += Math.sqrt(Math.pow(points.get(i).temp() - points.get(i + 1).temp(), 2) + Math.pow(points.get(i).time() - points.get(i + 1).time(), 2));
         }
         return fitness;
@@ -109,5 +109,22 @@ public class Chromosome {
     public Chromosome shuffle() {
         Collections.shuffle(this.getPoints());
         return this;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Chromosome {\n");
+        sb.append("\tPoints {\n");
+        for (int i = 0; i < points.size(); i++) {
+            Point p = points.get(i);
+            sb.append("\t\t").append(i).append(" {\n");
+            sb.append("\t\t\tTemperature: ").append(p.temp()).append("\n");
+            sb.append("\t\t\tTime: ").append(p.time()).append("\n");
+            sb.append("\t\t\tValue: ").append(p.value()).append("\n");
+            sb.append("\t\t}\n");
+        }
+        sb.append("\t}\n");
+        sb.append("Fitness: ").append(getFitness());
+        return sb.toString();
     }
 }

@@ -21,11 +21,11 @@ public class Problem {
         return list;
     }
 
-    public static @NotNull Chromosome createChromosome() {
+    public static @NotNull Chromosome createChromosome(String file) {
         Chromosome c = new Chromosome();
         List<String> temp = readFile("./data/temperatures.txt");
         List<String> time = readFile("./data/times.txt");
-        List<String> data = readFile("./data/plastic-anisotropy.csv");
+        List<String> data = readFile("./data/" + file);
 
         for (int i = 0; i < data.size(); i++) {
             String s = data.get(i);
@@ -34,7 +34,6 @@ public class Problem {
                 if (i == 0 && j == 0) continue;
                 String str = datum[j];
                 if (!"NA".equalsIgnoreCase(str)) {
-                    System.out.println("temp: " + temp.get(i) + ", time: " + time.get(j) + ", data: " + str);
                     c.addPoint(new Point(Double.parseDouble(temp.get(i)), Double.parseDouble(time.get(j)), Double.parseDouble(str)));
                 }
             }
