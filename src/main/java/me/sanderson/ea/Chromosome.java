@@ -1,5 +1,7 @@
 package me.sanderson.ea;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
