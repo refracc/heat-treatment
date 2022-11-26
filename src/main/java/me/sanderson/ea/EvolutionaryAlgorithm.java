@@ -32,8 +32,12 @@ public class EvolutionaryAlgorithm {
                     parent2 = Selection.random(population);
                 }
                 case ROULETTE -> {
+                    parent1 = Selection.roulette(population);
+                    parent2 = Selection.roulette(population);
                 }
                 case ROUTE_RANK -> {
+                    parent1 = Selection.routeRank(population);
+                    parent2 = Selection.routeRank(population);
                 }
                 case TOURNAMENT -> {
                     parent1 = Selection.tournament(population);
@@ -42,10 +46,6 @@ public class EvolutionaryAlgorithm {
             }
         }
     }
-
-    /*
-     * ADDITIONAL FUNCTIONS
-     */
 
     /**
      * The procedure for evaluating a {@link List} of {@link Chromosome}s.

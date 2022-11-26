@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44e1931-570c-4add-858b-6fd766bda63d" name="Changes" comment=".">
+    <list default="true" id="c44e1931-570c-4add-858b-6fd766bda63d" name="Changes" comment="Added google-java-format and reformatted code.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/utility/Helpers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/EvolutionaryAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Chromosome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Chromosome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Parameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Parameters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Activation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Initialisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Initialisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/EvolutionaryAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/EvolutionaryAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Selection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Selection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +159,7 @@
       <workItem from="1669201658766" duration="4007000" />
       <workItem from="1669226736977" duration="1026000" />
       <workItem from="1669230815591" duration="150000" />
-      <workItem from="1669424551597" duration="2294000" />
+      <workItem from="1669424551597" duration="3483000" />
     </task>
     <task id="LOCAL-00001" summary="updated pom.xml to remove unused dependency.">
       <created>1669182360748</created>
@@ -192,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669226849559</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Tidying up classes">
+      <created>1669426955346</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669426955346</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added google-java-format and reformatted code.">
+      <created>1669427087337</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669427087337</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +226,9 @@
     <MESSAGE value="Added hill climber" />
     <MESSAGE value="Added base implementation for EA - Should be able to start development soon :D" />
     <MESSAGE value="." />
-    <option name="LAST_COMMIT_MESSAGE" value="." />
+    <MESSAGE value="Tidying up classes" />
+    <MESSAGE value="Added google-java-format and reformatted code." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added google-java-format and reformatted code." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
