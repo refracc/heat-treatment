@@ -103,7 +103,7 @@ public enum Crossover {
             double tempAverage = (parent1.getPoints().get(i).temp() + parent2.getPoints().get(i).temp()) / 2;
             double timeAverage = (parent1.getPoints().get(i).time() + parent2.getPoints().get(i).time()) / 2;
 
-            child.getPoints().set(i, new Point(tempAverage, tempAverage, valueAverage));
+            child.getPoints().set(i, new Point(tempAverage, timeAverage, valueAverage));
         }
 
         return List.of(child);
