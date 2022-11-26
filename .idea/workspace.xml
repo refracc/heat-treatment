@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44e1931-570c-4add-858b-6fd766bda63d" name="Changes" comment="">
+    <list default="true" id="c44e1931-570c-4add-858b-6fd766bda63d" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Algorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Algorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/EvolutionaryAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Chromosome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Chromosome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Parameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Parameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Activation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Initialisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Initialisation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Selection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Selection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,13 +57,13 @@
       <recent name="$PROJECT_DIR$/data" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Algorithm">
-    <configuration name="Algorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="me.sanderson.ea.Algorithm" />
+  <component name="RunManager" selected="Application.HillClimber">
+    <configuration name="DataCleaning" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="me.sanderson.data.DataCleaning" />
       <module name="Research" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="me.sanderson.ea.*" />
+          <option name="PATTERN" value="me.sanderson.data.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -67,12 +71,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DataCleaning" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="me.sanderson.data.DataCleaning" />
+    <configuration name="EvolutionaryAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="me.sanderson.ea.EvolutionaryAlgorithm" />
       <module name="Research" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="me.sanderson.data.*" />
+          <option name="PATTERN" value="me.sanderson.ea.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,8 +125,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Algorithm" />
         <item itemvalue="Application.HillClimber" />
+        <item itemvalue="Application.EvolutionaryAlgorithm" />
         <item itemvalue="Application.Problem" />
         <item itemvalue="Application.FileManager" />
         <item itemvalue="Application.DataCleaning" />
@@ -156,6 +160,9 @@
       <workItem from="1669175225781" duration="6762000" />
       <workItem from="1669191127364" duration="3717000" />
       <workItem from="1669201658766" duration="4007000" />
+      <workItem from="1669226736977" duration="1026000" />
+      <workItem from="1669230815591" duration="150000" />
+      <workItem from="1669424551597" duration="2294000" />
     </task>
     <task id="LOCAL-00001" summary="updated pom.xml to remove unused dependency.">
       <created>1669182360748</created>
@@ -178,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669202028195</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=".">
+      <created>1669226849558</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669226849559</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +214,8 @@
     <MESSAGE value="updated pom.xml to remove unused dependency." />
     <MESSAGE value="Added hill climber" />
     <MESSAGE value="Added base implementation for EA - Should be able to start development soon :D" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added base implementation for EA - Should be able to start development soon :D" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

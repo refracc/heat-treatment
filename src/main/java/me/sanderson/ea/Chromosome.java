@@ -66,13 +66,14 @@ public class Chromosome implements Comparable {
     }
 
     /**
-     * Evaluate the {@link Chromosome} with respect to the fitness function (Euclidean Distance)
+     * Evaluate the {@link Chromosome} with respect to the fitness function (Euclidean Distance) expressed in 3 dimensions.
      * @return The {@link Chromosome}'s fitness value (after evaluating the {@link Chromosome}).
      */
     public double evaluate() {
         this.fitness = 0.0d;
         for (int i = 0; i < points.size() - 1; i++) {
-            fitness += Math.sqrt(Math.pow(points.get(i).temp() - points.get(i + 1).temp(), 2) + Math.pow(points.get(i).time() - points.get(i + 1).time(), 2));
+            fitness += Math.sqrt(Math.pow(points.get(i).temp() - points.get(i + 1).temp(), 2) + Math.pow(points.get(i).time() - points.get(i + 1).time(), 2)
+                    + Math.pow(points.get(i).value() - points.get(i + 1).value(), 2));
         }
         return fitness;
     }
