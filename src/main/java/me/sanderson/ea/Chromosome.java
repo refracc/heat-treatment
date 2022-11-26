@@ -29,6 +29,7 @@ public class Chromosome implements Comparable {
 
     /**
      * Constructor creating a new {@link Chromosome} with one singular point.
+     *
      * @param point The {@link Point} to add.
      */
     public Chromosome(Point point) {
@@ -37,7 +38,8 @@ public class Chromosome implements Comparable {
     }
 
     /**
-     * A constructor creating a new {@link Chromosome} with a {@link List} of {@link Point}s. 
+     * A constructor creating a new {@link Chromosome} with a {@link List} of {@link Point}s.
+     *
      * @param points The {@link List} of {@link Point}s to add to the {@link Chromosome}.
      */
     public Chromosome(List<Point> points) {
@@ -48,7 +50,8 @@ public class Chromosome implements Comparable {
     /**
      * A constructor creating a new {@link Chromosome} with a {@link List} of {@link Point}s.
      * This constructor is typically only used with the {@link Chromosome#copy()} method.
-     * @param points The {@link List} of {@link Point}s to add to the {@link Chromosome}.
+     *
+     * @param points  The {@link List} of {@link Point}s to add to the {@link Chromosome}.
      * @param fitness The fitness of the individual.
      */
     public Chromosome(List<Point> points, double fitness) {
@@ -58,7 +61,8 @@ public class Chromosome implements Comparable {
     }
 
     /**
-     * A constructor creating a new {@link Chromosome} with a {@link List} of {@link Point}s. 
+     * A constructor creating a new {@link Chromosome} with a {@link List} of {@link Point}s.
+     *
      * @param points The primitive array of {@link Point}s to add to the {@link Chromosome}.
      */
     public Chromosome(Point... points) {
@@ -67,6 +71,7 @@ public class Chromosome implements Comparable {
 
     /**
      * Evaluate the {@link Chromosome} with respect to the fitness function (Euclidean Distance) expressed in 3 dimensions.
+     *
      * @return The {@link Chromosome}'s fitness value (after evaluating the {@link Chromosome}).
      */
     public double evaluate() {
@@ -80,6 +85,7 @@ public class Chromosome implements Comparable {
 
     /**
      * Retrieve the fitness value of the {@link Chromosome}.
+     *
      * @return The fitness value of the {@link Chromosome}
      */
     public double getFitness() {
@@ -88,6 +94,7 @@ public class Chromosome implements Comparable {
 
     /**
      * Retrieve the {@link List} of {@link Point}s.
+     *
      * @return The {@link List} of {@link Point}s from the current {@link Chromosome}.
      */
     public List<Point> getPoints() {
@@ -96,6 +103,7 @@ public class Chromosome implements Comparable {
 
     /**
      * Add a {@link Point} to the {@link Chromosome}.
+     *
      * @param point the {@link Point} to add to the {@link Chromosome}.
      */
     public void addPoint(Point point) {
@@ -104,6 +112,7 @@ public class Chromosome implements Comparable {
 
     /**
      * Add a {@link List} of {@link Point}s to the {@link Chromosome}.
+     *
      * @param points The {@link List} of {@link Point}s to add to the {@link Chromosome}.
      */
     public void addPoints(List<Point> points) {
@@ -112,6 +121,7 @@ public class Chromosome implements Comparable {
 
     /**
      * Add a {@link List} of {@link Point}s to the {@link Chromosome}.
+     *
      * @param points The primitive array of {@link Point}s to add to the {@link Chromosome}.
      */
     public void addPoints(Point... points) {
@@ -132,8 +142,9 @@ public class Chromosome implements Comparable {
 
     /**
      * Returns a string representation of the object.
-     * @apiNote
-     * In general, the
+     *
+     * @return a string representation of the object.
+     * @apiNote In general, the
      * {@code toString} method returns a string that
      * "textually represents" this object. The result should
      * be a concise but informative representation that is easy for a
@@ -141,8 +152,7 @@ public class Chromosome implements Comparable {
      * It is recommended that all subclasses override this method.
      * The string output is not necessarily stable over time or across
      * JVM invocations.
-     * @implSpec
-     * The {@code toString} method for class {@code Object}
+     * @implSpec The {@code toString} method for class {@code Object}
      * returns a string consisting of the name of the class of which the
      * object is an instance, the at-sign character `{@code @}', and
      * the unsigned hexadecimal representation of the hash code of the
@@ -152,8 +162,6 @@ public class Chromosome implements Comparable {
      * <pre>
      * getClass().getName() + '@' + Integer.toHexString(hashCode())
      * </pre></blockquote>
-     *
-     * @return  a string representation of the object.
      */
     @Override
     public String toString() {

@@ -16,7 +16,8 @@ public record Point(double temp, double time, double value) {
      * @param time  The time at this data {@link Point}.
      * @param value The value for the data {@link Point}.
      */
-    public Point {}
+    public Point {
+    }
 
     /**
      * Retrieve the temperature of the {@link Point}.

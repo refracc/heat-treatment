@@ -18,6 +18,7 @@ public enum Initialisation {
      * Initialise a significantly larger population of {@link Chromosome}s and
      * take the top {@code n} candidates from this population to pre-seed the
      * population with good results.
+     *
      * @return A population pre-seeded with good(ish) results.
      */
     @Contract(pure = true)
@@ -33,6 +34,7 @@ public enum Initialisation {
     /**
      * Initialise a population with random {@link Chromosome}s. The values within these {@link Chromosome}s have been
      * randomised by using the {@link Chromosome#shuffle()} method.
+     *
      * @return A random population of {@link Chromosome}s.
      */
     public static @NotNull List<Chromosome> random() {

@@ -12,6 +12,7 @@ public enum Selection {
 
     /**
      * Select a {@link Chromosome} at random from the population.
+     *
      * @param population The population of {@link Chromosome}s to select from.
      * @return A random {@link Chromosome}.
      */
@@ -25,6 +26,7 @@ public enum Selection {
      * chromosomes from the current population to the new population.
      * (1). Select {@code k} solutions at random from the population.
      * (2). Select the best of these {@code k} solutions to be parents.
+     *
      * @return A {@link Chromosome} from the population.
      */
     public static Chromosome tournament(@NotNull List<Chromosome> population) {
