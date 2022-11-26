@@ -70,7 +70,7 @@ public enum Crossover {
      * @param parent2 A {@link Chromosome} from the population.
      * @return A collection of children ({@link Chromosome}s) from the population.
      */
-    public static @NotNull @Unmodifiable List<Chromosome> twoPoint(@NotNull Chromosome parent1, @NotNull Chromosome parent2){
+    public static @NotNull @Unmodifiable List<Chromosome> twoPoint(@NotNull Chromosome parent1, @NotNull Chromosome parent2) {
         Chromosome child1 = new Chromosome();
         Chromosome child2 = new Chromosome();
         int cut1 = Parameters.RANDOM.nextInt(parent1.getPoints().size());
@@ -88,7 +88,8 @@ public enum Crossover {
         return List.of(child1, child2);
     }
 
-    /** Use Arithmetic crossover to create a new collection of children from the population.
+    /**
+     * Use Arithmetic crossover to create a new collection of children from the population.
      *
      * @param parent1 A {@link Chromosome} from the population.
      * @param parent2 A {@link Chromosome} from the population.
@@ -98,9 +99,9 @@ public enum Crossover {
         Chromosome child = new Chromosome();
 
         for (int i = 0; i < parent1.getPoints().size(); i++) {
-            double valueAverage = (parent1.getPoints().get(i).value() + parent2.getPoints().get(i).value())/ 2;
-            double tempAverage = (parent1.getPoints().get(i).temp() + parent2.getPoints().get(i).temp())/ 2;
-            double timeAverage = (parent1.getPoints().get(i).time() + parent2.getPoints().get(i).time())/ 2;
+            double valueAverage = (parent1.getPoints().get(i).value() + parent2.getPoints().get(i).value()) / 2;
+            double tempAverage = (parent1.getPoints().get(i).temp() + parent2.getPoints().get(i).temp()) / 2;
+            double timeAverage = (parent1.getPoints().get(i).time() + parent2.getPoints().get(i).time()) / 2;
 
             child.getPoints().set(i, new Point(tempAverage, tempAverage, valueAverage));
         }
