@@ -1,5 +1,6 @@
 package me.sanderson.ea;
 
+import me.sanderson.ea.options.Crossover;
 import me.sanderson.ea.options.Initialisation;
 import me.sanderson.ea.options.Selection;
 import org.jetbrains.annotations.NotNull;
@@ -23,8 +24,8 @@ public class EvolutionaryAlgorithm {
         best = getBestChromosome(population);
 
         for (int i = 0; i < Parameters.MAXIMUM_EVALUATIONS; i++) {
-            Chromosome parent1;
-            Chromosome parent2;
+            Chromosome parent1 = new Chromosome();
+            Chromosome parent2 = new Chromosome();
 
             switch (Parameters.SELECTION) {
                 case RANDOM -> {
@@ -44,6 +45,13 @@ public class EvolutionaryAlgorithm {
                     parent2 = Selection.tournament(population);
                 }
             }
+
+            List<Chromosome> children = switch (Parameters.CROSSOVER) {
+                case ARITHMETIC -> Crossover.arithmetic(parent1, parent2);
+                case ONE_POINT -> Crossover.onePoint(parent1, parent2);
+                case TWO_POINT -> Crossover.twoPoint(parent1, parent2);
+                case UNIFORM -> Crossover.uniform(parent1, parent2);
+            };
         }
     }
 
