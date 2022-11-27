@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44e1931-570c-4add-858b-6fd766bda63d" name="Changes" comment="Fixed arithmetic crossover method">
+    <list default="true" id="c44e1931-570c-4add-858b-6fd766bda63d" name="Changes" comment="Added Mutation details to Mutation.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Chromosome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Chromosome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/EvolutionaryAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/EvolutionaryAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Point.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Point.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Mutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Mutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Replacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Replacement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +160,7 @@
       <workItem from="1669226736977" duration="1026000" />
       <workItem from="1669230815591" duration="150000" />
       <workItem from="1669424551597" duration="5423000" />
-      <workItem from="1669584765531" duration="2218000" />
+      <workItem from="1669584765531" duration="4036000" />
     </task>
     <task id="LOCAL-00001" summary="updated pom.xml to remove unused dependency.">
       <created>1669182360748</created>
@@ -232,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669429883463</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added Mutation details to Mutation.java">
+      <created>1669590006285</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669590006285</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,7 +268,8 @@
     <MESSAGE value="Added Crossover methods." />
     <MESSAGE value="Code reformat" />
     <MESSAGE value="Fixed arithmetic crossover method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed arithmetic crossover method" />
+    <MESSAGE value="Added Mutation details to Mutation.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Mutation details to Mutation.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

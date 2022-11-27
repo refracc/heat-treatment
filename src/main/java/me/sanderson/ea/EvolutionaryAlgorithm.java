@@ -1,8 +1,6 @@
 package me.sanderson.ea;
 
-import me.sanderson.ea.options.Crossover;
-import me.sanderson.ea.options.Initialisation;
-import me.sanderson.ea.options.Selection;
+import me.sanderson.ea.options.*;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
@@ -13,7 +11,7 @@ import java.util.List;
 public class EvolutionaryAlgorithm {
 
     public static void main(String[] args) {
-        Chromosome best = null;
+        Chromosome best;
         List<Chromosome> population;
 
         population = switch (Parameters.INITIALISATION) {
@@ -52,7 +50,21 @@ public class EvolutionaryAlgorithm {
                 case TWO_POINT -> Crossover.twoPoint(parent1, parent2);
                 case UNIFORM -> Crossover.uniform(parent1, parent2);
             };
+
+            switch (Parameters.MUTATION) {
+                case CONSTRAINED -> Mutation.constrained(children);
+                case STANDARD -> Mutation.standard(children);
+            }
+
+            evaluate(children);
+
+            switch (Parameters.REPLACEMENT) {
+                case TOURNAMENT -> Replacement.tournament(children);
+                case WORST -> Replacement.worst(children);
+            }
         }
+
+        System.out.println(best);
     }
 
     /**
@@ -61,9 +73,7 @@ public class EvolutionaryAlgorithm {
      * @param population The population of {@link Chromosome}s.
      */
     private static void evaluate(@NotNull List<Chromosome> population) {
-        for (Chromosome c : population) {
-            c.getFitness();
-        }
+        population.forEach(Chromosome::evaluate);
     }
 
     /**

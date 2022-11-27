@@ -1,8 +1,8 @@
 package me.sanderson.ea;
 
+import me.sanderson.ea.data.Problem;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -23,50 +23,13 @@ public class Chromosome implements Comparable {
      * Default constructor creating an empty {@link Chromosome}.
      */
     public Chromosome() {
-        this.points = new ArrayList<>();
-        this.fitness = 0.0d;
+        this.points = Problem.createChromosome(Parameters.FILE_NAME).getPoints();
+        this.fitness = this.evaluate();
     }
 
-    /**
-     * Constructor creating a new {@link Chromosome} with one singular point.
-     *
-     * @param point The {@link Point} to add.
-     */
-    public Chromosome(Point point) {
-        this();
-        this.points.add(point);
-    }
-
-    /**
-     * A constructor creating a new {@link Chromosome} with a {@link List} of {@link Point}s.
-     *
-     * @param points The {@link List} of {@link Point}s to add to the {@link Chromosome}.
-     */
-    public Chromosome(List<Point> points) {
-        this();
-        this.points.addAll(points);
-    }
-
-    /**
-     * A constructor creating a new {@link Chromosome} with a {@link List} of {@link Point}s.
-     * This constructor is typically only used with the {@link Chromosome#copy()} method.
-     *
-     * @param points  The {@link List} of {@link Point}s to add to the {@link Chromosome}.
-     * @param fitness The fitness of the individual.
-     */
     public Chromosome(List<Point> points, double fitness) {
-        this();
-        this.points.addAll(points);
+        this.points = points;
         this.fitness = fitness;
-    }
-
-    /**
-     * A constructor creating a new {@link Chromosome} with a {@link List} of {@link Point}s.
-     *
-     * @param points The primitive array of {@link Point}s to add to the {@link Chromosome}.
-     */
-    public Chromosome(Point... points) {
-        this(Arrays.asList(points));
     }
 
     /**
