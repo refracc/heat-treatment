@@ -22,7 +22,7 @@ public record Point(double temp, double time, double value) {
     /**
      * Retrieve the temperature of the {@link Point}.
      *
-     * @return THe temperature of the {@link Point}.
+     * @return The temperature of the {@link Point}.
      */
     @Override
     public double temp() {
