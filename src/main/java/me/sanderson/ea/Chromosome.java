@@ -14,7 +14,7 @@ import java.util.List;
  * @version 0.0.1
  * @since 2022-11-22
  */
-public class Chromosome implements Comparable {
+public class Chromosome implements Comparable<Chromosome> {
 
     private final List<Point> points;
     private double fitness;
@@ -40,7 +40,8 @@ public class Chromosome implements Comparable {
     public double evaluate() {
         this.fitness = 0.0d;
         for (int i = 0; i < points.size() - 1; i++) {
-            fitness += Math.sqrt(Math.pow(points.get(i).temp() - points.get(i + 1).temp(), 2) + Math.pow(points.get(i).time() - points.get(i + 1).time(), 2)
+            fitness += Math.sqrt(Math.pow(points.get(i).temp() - points.get(i + 1).temp(), 2)
+                    + Math.pow(points.get(i).time() - points.get(i + 1).time(), 2)
                     + Math.pow(points.get(i).value() - points.get(i + 1).value(), 2));
         }
         return fitness;
@@ -162,7 +163,7 @@ public class Chromosome implements Comparable {
      * x.compareTo(y)==0} implies that {@code signum(x.compareTo(z))
      * == signum(y.compareTo(z))}, for all {@code z}.
      *
-     * @param o the object to be compared.
+     * @param c the {@link Chromosome} to be compared with.
      * @return a negative integer, zero, or a positive integer as this object
      * is less than, equal to, or greater than the specified object.
      * @throws NullPointerException if the specified object is null
@@ -176,8 +177,7 @@ public class Chromosome implements Comparable {
      * inconsistent with equals."
      */
     @Override
-    public int compareTo(@NotNull Object o) {
-        Chromosome c = (Chromosome) o;
+    public int compareTo(@NotNull Chromosome c) {
         return Double.compare(this.getFitness(), c.getFitness());
     }
 }

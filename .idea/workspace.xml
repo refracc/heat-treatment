@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44e1931-570c-4add-858b-6fd766bda63d" name="Changes" comment="Added Mutation details to Mutation.java">
+    <list default="true" id="c44e1931-570c-4add-858b-6fd766bda63d" name="Changes" comment="Added replacements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Chromosome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Chromosome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/EvolutionaryAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/EvolutionaryAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Replacement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Replacement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +52,7 @@
       <recent name="$PROJECT_DIR$/data" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HillClimber">
+  <component name="RunManager" selected="Application.EvolutionaryAlgorithm">
     <configuration name="DataCleaning" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="me.sanderson.data.DataCleaning" />
       <module name="Research" />
@@ -122,8 +120,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HillClimber" />
         <item itemvalue="Application.EvolutionaryAlgorithm" />
+        <item itemvalue="Application.HillClimber" />
         <item itemvalue="Application.Problem" />
         <item itemvalue="Application.FileManager" />
         <item itemvalue="Application.DataCleaning" />
@@ -161,6 +159,8 @@
       <workItem from="1669230815591" duration="150000" />
       <workItem from="1669424551597" duration="5423000" />
       <workItem from="1669584765531" duration="4036000" />
+      <workItem from="1669593032595" duration="355000" />
+      <workItem from="1669692662175" duration="544000" />
     </task>
     <task id="LOCAL-00001" summary="updated pom.xml to remove unused dependency.">
       <created>1669182360748</created>
@@ -239,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669590006285</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added replacements">
+      <created>1669593380597</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669593380597</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +276,8 @@
     <MESSAGE value="Code reformat" />
     <MESSAGE value="Fixed arithmetic crossover method" />
     <MESSAGE value="Added Mutation details to Mutation.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Mutation details to Mutation.java" />
+    <MESSAGE value="Added replacements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added replacements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
