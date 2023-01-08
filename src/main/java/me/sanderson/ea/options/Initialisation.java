@@ -23,6 +23,7 @@ public enum Initialisation {
      */
     @Contract(pure = true)
     public static @NotNull List<Chromosome> augmented() {
+        System.out.println("Initialising population of " + Parameters.AUGMENTED_POPULATION_SIZE + " chromosomes.");
         List<Chromosome> pop = new ArrayList<>();
         for (int i = 0; i < Parameters.AUGMENTED_POPULATION_SIZE; i++) {
             pop.add(Problem.createChromosome(Parameters.FILE_NAME));
@@ -38,6 +39,7 @@ public enum Initialisation {
      * @return A random population of {@link Chromosome}s.
      */
     public static @NotNull List<Chromosome> random() {
+        System.out.println("Initialising population of " + Parameters.POPULATION_SIZE + " chromosomes.");
         List<Chromosome> pop = new ArrayList<>();
         for (int i = 0; i < Parameters.POPULATION_SIZE; i++) {
             Chromosome c = Problem.createChromosome(Parameters.FILE_NAME);

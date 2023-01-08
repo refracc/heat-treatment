@@ -12,15 +12,15 @@ public class Parameters {
     private static final long seed = System.currentTimeMillis();
     public static Initialisation INITIALISATION = Initialisation.AUGMENTED;
     public static Selection SELECTION = Selection.TOURNAMENT;
-    public static Crossover CROSSOVER = Crossover.ONE_POINT;
+    public static Crossover CROSSOVER = Crossover.TWO_POINT;
     public static Mutation MUTATION = Mutation.STANDARD;
     public static Replacement REPLACEMENT = Replacement.WORST;
     public static int TOURNAMENT_SIZE = 10;
     public static String FILE_NAME = "plastic-anisotropy.csv";
     // specifies minimum and maximum weight values
-    public static int POPULATION_SIZE = 80;
-    public static int AUGMENTED_POPULATION_SIZE = 1500;
-    public static int MAXIMUM_EVALUATIONS = 20000;
+    public static int POPULATION_SIZE = 300;
+    public static int AUGMENTED_POPULATION_SIZE = 15750;
+    public static int MAXIMUM_EVALUATIONS = 50000;
     // Parameters for mutation
     // Rate = probability of changing a gene
     // Change = the maximum +/- adjustment to the gene value

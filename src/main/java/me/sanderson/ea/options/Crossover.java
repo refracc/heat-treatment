@@ -71,8 +71,8 @@ public enum Crossover {
      * @return A collection of children ({@link Chromosome}s) from the population.
      */
     public static @NotNull List<Chromosome> twoPoint(@NotNull Chromosome parent1, @NotNull Chromosome parent2) {
-        Chromosome child1 = new Chromosome();
-        Chromosome child2 = new Chromosome();
+        Chromosome child1 = parent1.copy();
+        Chromosome child2 = parent2.copy();
         int cut1 = Parameters.RANDOM.nextInt(parent1.getPoints().size());
         int cut2 = Parameters.RANDOM.nextInt(parent1.getPoints().size() - cut1 + 1) + cut1;
 
@@ -96,7 +96,7 @@ public enum Crossover {
      * @return A collection of children ({@link Chromosome}s) from the population.
      */
     public static @NotNull List<Chromosome> arithmetic(@NotNull Chromosome parent1, @NotNull Chromosome parent2) {
-        Chromosome child = new Chromosome();
+        Chromosome child = parent1.copy();
 
         for (int i = 0; i < parent1.getPoints().size(); i++) {
             double valueAverage = (parent1.getPoints().get(i).value() + parent2.getPoints().get(i).value()) / 2;

@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c44e1931-570c-4add-858b-6fd766bda63d" name="Changes" comment="EA now runs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Chromosome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Chromosome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/EvolutionaryAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/EvolutionaryAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Parameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Parameters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Crossover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Crossover.java" afterDir="false" />
@@ -178,7 +177,7 @@
       <workItem from="1672927618915" duration="51000" />
       <workItem from="1673114287323" duration="11000" />
       <workItem from="1673145570681" duration="2237000" />
-      <workItem from="1673150079038" duration="884000" />
+      <workItem from="1673150079038" duration="1897000" />
     </task>
     <task id="LOCAL-00001" summary="updated pom.xml to remove unused dependency.">
       <created>1669182360748</created>

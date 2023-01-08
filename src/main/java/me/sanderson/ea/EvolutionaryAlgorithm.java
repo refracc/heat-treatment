@@ -9,8 +9,10 @@ import java.util.List;
  */
 public class EvolutionaryAlgorithm {
 
+    private static Chromosome globalBest = null;
+
     public static void main(String[] args) {
-        Chromosome best;
+        Chromosome best = null;
         List<Chromosome> population;
 
         population = switch (Parameters.INITIALISATION) {
@@ -18,10 +20,8 @@ public class EvolutionaryAlgorithm {
             case RANDOM -> Initialisation.random();
         };
 
-        best = getBestChromosome(population);
-
         for (int i = 0; i < Parameters.MAXIMUM_EVALUATIONS; i++) {
-            System.out.printf("Generation: %d, best chromosome fitness: %.2f\n", i, best.getFitness());
+            best = getBestChromosome(population, i);
             Chromosome parent1 = new Chromosome();
             Chromosome parent2 = new Chromosome();
 
@@ -64,22 +64,30 @@ public class EvolutionaryAlgorithm {
             }
         }
 
-        System.out.println(best);
+        System.out.println(globalBest);
     }
 
     /**
      * The function to retrieve the best {@link Chromosome} from the population.
      *
      * @param population The population of {@link Chromosome}s.
+     * @param i The counter value from the loop.
      * @return The best {@link Chromosome} from the population based on fitness.
      */
-    private static Chromosome getBestChromosome(@NotNull List<Chromosome> population) {
+    private static @NotNull Chromosome getBestChromosome(@NotNull List<Chromosome> population, int i) {
         Chromosome best = null;
 
         for (Chromosome c : population) {
-            if (best == null || c.getFitness() > best.getFitness()) {
+            if (best == null || c.getFitness() < best.getFitness()) {
                 best = c.copy();
             }
+        }
+        assert best != null;
+        System.out.println("Best fitness from generation " + i + ": " + best.getFitness());
+
+        if (globalBest == null || best.getFitness() < globalBest.getFitness()) {
+            globalBest = best.copy();
+            System.out.println("**New global best fitness found!**");
         }
         return best;
     }
