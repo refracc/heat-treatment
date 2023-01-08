@@ -24,7 +24,7 @@ public enum Initialisation {
     @Contract(pure = true)
     public static @NotNull List<Chromosome> augmented() {
         List<Chromosome> pop = new ArrayList<>();
-        for (int i = 0; i < Parameters.POPULATION_SIZE + 7500; i++) {
+        for (int i = 0; i < Parameters.AUGMENTED_POPULATION_SIZE; i++) {
             pop.add(Problem.createChromosome(Parameters.FILE_NAME));
         }
         pop.forEach(Chromosome::evaluate);

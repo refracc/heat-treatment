@@ -1,8 +1,8 @@
 package me.sanderson.ea;
 
-import me.sanderson.ea.data.Problem;
 import org.jetbrains.annotations.NotNull;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -16,18 +16,18 @@ import java.util.List;
  */
 public class Chromosome implements Comparable<Chromosome> {
 
-    private final List<Point> points;
+    private List<Point> points;
     private double fitness;
 
     /**
      * Default constructor creating an empty {@link Chromosome}.
      */
     public Chromosome() {
-        this.points = Problem.createChromosome(Parameters.FILE_NAME).getPoints();
-        this.fitness = this.evaluate();
+        this.points = new ArrayList<>();
+        this.fitness = 0.0d;
     }
 
-    public Chromosome(List<Point> points, double fitness) {
+    private Chromosome(List<Point> points, double fitness) {
         this.points = points;
         this.fitness = fitness;
     }
@@ -84,7 +84,7 @@ public class Chromosome implements Comparable<Chromosome> {
     }
 
     /**
-     * Add a {@link List} of {@link Point}s to the {@link Chromosome}.
+     * Add a primitive array of {@link Point}s to the {@link Chromosome}.
      *
      * @param points The primitive array of {@link Point}s to add to the {@link Chromosome}.
      */

@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44e1931-570c-4add-858b-6fd766bda63d" name="Changes" comment="Added replacements">
+    <list default="true" id="c44e1931-570c-4add-858b-6fd766bda63d" name="Changes" comment="EA now runs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Chromosome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Chromosome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/EvolutionaryAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/EvolutionaryAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Parameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Parameters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Crossover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Crossover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Initialisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Initialisation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +45,15 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -161,6 +170,15 @@
       <workItem from="1669584765531" duration="4036000" />
       <workItem from="1669593032595" duration="355000" />
       <workItem from="1669692662175" duration="544000" />
+      <workItem from="1669762381602" duration="375000" />
+      <workItem from="1670451743600" duration="567000" />
+      <workItem from="1672152981901" duration="641000" />
+      <workItem from="1672925556505" duration="22000" />
+      <workItem from="1672925584843" duration="549000" />
+      <workItem from="1672927618915" duration="51000" />
+      <workItem from="1673114287323" duration="11000" />
+      <workItem from="1673145570681" duration="2237000" />
+      <workItem from="1673150079038" duration="884000" />
     </task>
     <task id="LOCAL-00001" summary="updated pom.xml to remove unused dependency.">
       <created>1669182360748</created>
@@ -246,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669593380597</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="EA now runs">
+      <created>1669762630003</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669762630003</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,16 +302,14 @@
     <MESSAGE value="Fixed arithmetic crossover method" />
     <MESSAGE value="Added Mutation details to Mutation.java" />
     <MESSAGE value="Added replacements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added replacements" />
+    <MESSAGE value="EA now runs" />
+    <option name="LAST_COMMIT_MESSAGE" value="EA now runs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NumberFormatException" package="java.lang" />
-          <option name="timeStamp" value="6" />
-        </breakpoint>
-      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception" />
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">

@@ -19,6 +19,7 @@ public class Parameters {
     public static String FILE_NAME = "plastic-anisotropy.csv";
     // specifies minimum and maximum weight values
     public static int POPULATION_SIZE = 80;
+    public static int AUGMENTED_POPULATION_SIZE = 1500;
     public static int MAXIMUM_EVALUATIONS = 20000;
     // Parameters for mutation
     // Rate = probability of changing a gene

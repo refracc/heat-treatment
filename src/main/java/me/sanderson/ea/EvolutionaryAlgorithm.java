@@ -2,7 +2,6 @@ package me.sanderson.ea;
 
 import me.sanderson.ea.options.*;
 import org.jetbrains.annotations.NotNull;
-
 import java.util.List;
 
 /**
@@ -22,6 +21,7 @@ public class EvolutionaryAlgorithm {
         best = getBestChromosome(population);
 
         for (int i = 0; i < Parameters.MAXIMUM_EVALUATIONS; i++) {
+            System.out.printf("Generation: %d, best chromosome fitness: %.2f\n", i, best.getFitness());
             Chromosome parent1 = new Chromosome();
             Chromosome parent2 = new Chromosome();
 
@@ -56,7 +56,7 @@ public class EvolutionaryAlgorithm {
                 case STANDARD -> Mutation.standard(children);
             }
 
-            evaluate(children);
+            children.forEach(Chromosome::evaluate);
 
             switch (Parameters.REPLACEMENT) {
                 case TOURNAMENT -> Replacement.tournament(children);
@@ -65,15 +65,6 @@ public class EvolutionaryAlgorithm {
         }
 
         System.out.println(best);
-    }
-
-    /**
-     * The procedure for evaluating a {@link List} of {@link Chromosome}s.
-     *
-     * @param population The population of {@link Chromosome}s.
-     */
-    private static void evaluate(@NotNull List<Chromosome> population) {
-        population.forEach(Chromosome::evaluate);
     }
 
     /**
@@ -86,7 +77,7 @@ public class EvolutionaryAlgorithm {
         Chromosome best = null;
 
         for (Chromosome c : population) {
-            if (best == null || c.getFitness() < best.getFitness()) {
+            if (best == null || c.getFitness() > best.getFitness()) {
                 best = c.copy();
             }
         }
