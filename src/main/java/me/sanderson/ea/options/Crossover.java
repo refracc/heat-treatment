@@ -19,8 +19,8 @@ public enum Crossover {
      * @return A collection of children ({@link Chromosome}s) from the population.
      */
     public static @NotNull List<Chromosome> uniform(@NotNull Chromosome parent1, @NotNull Chromosome parent2) {
-        Chromosome child1 = new Chromosome();
-        Chromosome child2 = new Chromosome();
+        Chromosome child1 = parent1.copy();
+        Chromosome child2 = parent2.copy();
         int i = 0;
         if (i < parent1.getPoints().size()) {
             do {

@@ -11,16 +11,16 @@ public class Parameters {
     //Random number generator used throughout the application
     private static final long seed = System.currentTimeMillis();
     public static Initialisation INITIALISATION = Initialisation.AUGMENTED;
-    public static Selection SELECTION = Selection.TOURNAMENT;
-    public static Crossover CROSSOVER = Crossover.TWO_POINT;
-    public static Mutation MUTATION = Mutation.STANDARD;
+    public static Selection SELECTION = Selection.ROULETTE;
+    public static Crossover CROSSOVER = Crossover.UNIFORM;
+    public static Mutation MUTATION = Mutation.CONSTRAINED;
     public static Replacement REPLACEMENT = Replacement.WORST;
     public static int TOURNAMENT_SIZE = 10;
     public static String FILE_NAME = "plastic-anisotropy.csv";
     // specifies minimum and maximum weight values
     public static int POPULATION_SIZE = 300;
     public static int AUGMENTED_POPULATION_SIZE = 15750;
-    public static int MAXIMUM_EVALUATIONS = 50000;
+    public static int MAXIMUM_EVALUATIONS = 20000;
     // Parameters for mutation
     // Rate = probability of changing a gene
     // Change = the maximum +/- adjustment to the gene value
@@ -28,8 +28,7 @@ public class Parameters {
     public static double MUTATION_CHANGE = 1.50; // delta change for mutation operator
     public static Random RANDOM = new Random(seed);
 
-    @Override
-    public @NotNull String toString() {
+    public @NotNull static String asString() {
         StringBuilder str = new StringBuilder();
         for (Field field : Parameters.class.getDeclaredFields()) {
             String name = field.getName();

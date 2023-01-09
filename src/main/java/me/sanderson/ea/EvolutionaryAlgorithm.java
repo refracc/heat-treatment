@@ -63,8 +63,9 @@ public class EvolutionaryAlgorithm {
                 case WORST -> Replacement.worst(children);
             }
         }
-
+        System.out.println(best);
         System.out.println(globalBest);
+        System.out.println(Parameters.asString());
     }
 
     /**
@@ -87,7 +88,7 @@ public class EvolutionaryAlgorithm {
 
         if (globalBest == null || best.getFitness() < globalBest.getFitness()) {
             globalBest = best.copy();
-            System.out.println("**New global best fitness found!**");
+            System.out.println("**NEW GLOBAL BEST FITNESS FOUND!**");
         }
         return best;
     }

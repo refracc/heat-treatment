@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/EvolutionaryAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/EvolutionaryAlgorithm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Parameters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/Parameters.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Crossover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Crossover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Initialisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/sanderson/ea/options/Initialisation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +176,9 @@
       <workItem from="1672927618915" duration="51000" />
       <workItem from="1673114287323" duration="11000" />
       <workItem from="1673145570681" duration="2237000" />
-      <workItem from="1673150079038" duration="1897000" />
+      <workItem from="1673150079038" duration="2220000" />
+      <workItem from="1673171000000" duration="1555000" />
+      <workItem from="1673278416810" duration="7000" />
     </task>
     <task id="LOCAL-00001" summary="updated pom.xml to remove unused dependency.">
       <created>1669182360748</created>
