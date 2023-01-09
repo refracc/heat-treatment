@@ -41,8 +41,7 @@ public class Chromosome implements Comparable<Chromosome> {
         this.fitness = 0.0d;
         for (int i = 0; i < points.size() - 1; i++) {
             fitness += Math.sqrt(Math.pow(points.get(i).temp() - points.get(i + 1).temp(), 2)
-                    + Math.pow(points.get(i).time() - points.get(i + 1).time(), 2)
-                    + Math.pow(points.get(i).value() - points.get(i + 1).value(), 2));
+                    + Math.pow(points.get(i).time() - points.get(i + 1).time(), 2));
         }
         return fitness;
     }

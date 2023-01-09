@@ -1,12 +1,10 @@
 package me.sanderson.ea;
 
 import me.sanderson.ea.options.*;
+import me.sanderson.ea.utility.ProblemType;
 import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
-/**
- * Output should be with parallel coordinates :)
- */
 public class EvolutionaryAlgorithm {
 
     private static Chromosome globalBest = null;
@@ -78,17 +76,32 @@ public class EvolutionaryAlgorithm {
     private static @NotNull Chromosome getBestChromosome(@NotNull List<Chromosome> population, int i) {
         Chromosome best = null;
 
-        for (Chromosome c : population) {
-            if (best == null || c.getFitness() < best.getFitness()) {
-                best = c.copy();
+        if (Parameters.PROBLEM == ProblemType.MINIMISATION) {
+            for (Chromosome c : population) {
+                if ((best == null) || (c.getFitness() < best.getFitness())) {
+                    best = c.copy();
+                }
             }
-        }
-        assert best != null;
-        System.out.println("Best fitness from generation " + i + ": " + best.getFitness());
+            assert best != null;
+            System.out.printf("Best fitness from generation %d: %s%n", i, best.getFitness());
 
-        if (globalBest == null || best.getFitness() < globalBest.getFitness()) {
-            globalBest = best.copy();
-            System.out.println("**NEW GLOBAL BEST FITNESS FOUND!**");
+            if ((globalBest == null) || (best.getFitness() < globalBest.getFitness())) {
+                globalBest = best.copy();
+                System.out.println("**NEW GLOBAL BEST FITNESS FOUND!**");
+            }
+        } else {
+            for (Chromosome c : population) {
+                if ((best == null) || (c.getFitness() > best.getFitness())) {
+                    best = c.copy();
+                }
+            }
+            assert best != null;
+            System.out.printf("Best fitness from generation %d: %s%n", i, best.getFitness());
+
+            if ((globalBest == null) || (best.getFitness() > globalBest.getFitness())) {
+                globalBest = best.copy();
+                System.out.println("**NEW GLOBAL BEST FITNESS FOUND!**");
+            }
         }
         return best;
     }
