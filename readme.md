@@ -80,6 +80,18 @@ public static double MUTATION_RATE = 0.90; // mutation rate for mutation operato
 public static double MUTATION_CHANGE = 1.50; // delta change for mutation operator
 ```
 
+## Further Work
+This project could do with some further work. Such as...
+* Outputting its results to a file.
+    * This should be fairly simple to do.
+* Being parallelised to handle multiple instances of the problem at the same time.
+* Taking arguments in the starting script to dictate how the evolutionary algorithm should function.
+* Pre-seeding solutions.
+    * Should good solutions be already known.
+* Adding in more operators to each of the stages of the evolutionary cycle.
+* Adding in other ways to solve the problem.
+    * Similar to Simulated Annealing (how fitting!)
+
 ## Contributing
 Pull requests are welcome! You are also permitted under the license of this project to use it in future research projects, or for private use. All we ask is, credit goes to the authors and contributors of this project:\
 [Dr Stathis Tingas](https://www.napier.ac.uk/people/stathis-tingas): [e.tingas@napier.ac.uk](mailto:e.tingas@napier.ac.uk), Lecturer of Mathematics @ Edinburgh Napier University\
