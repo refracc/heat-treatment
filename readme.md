@@ -82,6 +82,8 @@ public static double MUTATION_CHANGE = 1.50; // delta change for mutation operat
 
 ## Further Work
 This project could do with some further work. Such as...
+* Outputting the location of the fittest chromosome in the parametric space.
+    * As (x, y) coordinates.
 * Outputting its results to a file.
     * This should be fairly simple to do.
 * Being parallelised to handle multiple instances of the problem at the same time.
