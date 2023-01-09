@@ -3,6 +3,7 @@ package me.sanderson.ea;
 import me.sanderson.ea.options.*;
 import me.sanderson.ea.utility.ProblemType;
 import org.jetbrains.annotations.NotNull;
+
 import java.util.List;
 
 public class EvolutionaryAlgorithm {
@@ -70,7 +71,7 @@ public class EvolutionaryAlgorithm {
      * The function to retrieve the best {@link Chromosome} from the population.
      *
      * @param population The population of {@link Chromosome}s.
-     * @param i The counter value from the loop.
+     * @param i          The counter value from the loop.
      * @return The best {@link Chromosome} from the population based on fitness.
      */
     private static @NotNull Chromosome getBestChromosome(@NotNull List<Chromosome> population, int i) {

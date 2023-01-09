@@ -16,7 +16,7 @@ import java.util.List;
  */
 public class Chromosome implements Comparable<Chromosome> {
 
-    private List<Point> points;
+    private final List<Point> points;
     private double fitness;
 
     /**

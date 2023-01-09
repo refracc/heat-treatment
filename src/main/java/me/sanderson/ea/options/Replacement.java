@@ -14,6 +14,7 @@ public enum Replacement {
 
     /**
      * Replace the worst performing {@link Chromosome} in the population with a new random {@link Chromosome}
+     *
      * @param population A collection of {@link Chromosome}s from the population.
      */
     public static void worst(List<Chromosome> population) {
@@ -23,6 +24,7 @@ public enum Replacement {
 
     /**
      * Use tournament as a means for replacement in the evolutionary process.
+     *
      * @param population The population of {@link Chromosome}s.
      */
     @Contract(pure = true)
@@ -37,6 +39,7 @@ public enum Replacement {
 
     /**
      * Retrieve the worst performing {@link Chromosome} from the population.
+     *
      * @param population The population of {@link Chromosome}s.
      * @return The index of the worst performing {@link Chromosome}.
      */

@@ -6,6 +6,7 @@ import me.sanderson.ea.Point;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public enum Crossover {
@@ -106,6 +107,6 @@ public enum Crossover {
             child.getPoints().set(i, new Point(tempAverage, timeAverage, valueAverage));
         }
 
-        return Arrays.asList(child);
+        return Collections.singletonList(child);
     }
 }

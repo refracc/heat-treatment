@@ -104,7 +104,8 @@ public class Parameters {
      * getClass().getName() + '@' + Integer.toHexString(hashCode())
      * </pre></blockquote>
      */
-    public @NotNull static String asString() {
+    public @NotNull
+    static String asString() {
         StringBuilder str = new StringBuilder();
         for (Field field : Parameters.class.getDeclaredFields()) {
             String name = field.getName();

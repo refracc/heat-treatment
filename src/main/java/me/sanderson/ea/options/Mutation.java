@@ -12,6 +12,7 @@ public enum Mutation {
 
     /**
      * Mutate the population based on the constrained mutation technique.
+     *
      * @param children The child {@link Chromosome}s to be mutated.
      */
     public static void constrained(@NotNull List<Chromosome> children) {
@@ -38,6 +39,7 @@ public enum Mutation {
 
     /**
      * Mutate a population based on the standard probabilistic mutation technique.
+     *
      * @param children The child {@link Chromosome}s to be mutated.
      */
     public static void standard(@NotNull List<Chromosome> children) {
