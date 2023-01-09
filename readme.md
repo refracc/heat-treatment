@@ -82,7 +82,7 @@ public static double MUTATION_CHANGE = 1.50; // delta change for mutation operat
 
 ## Contributing
 Pull requests are welcome! You are also permitted under the license of this project to use it in future research projects, or for private use. All we ask is, credit goes to the authors and contributors of this project:\
-[Dr Stathis Tingas](https://www.napier.ac.uk/people/stathis-tingas): [e.tingas@napier.ac.uk](mailto:e.tingas@napier.ac.uk), Lecturer of Mathematics\
-[Dr Neil Urquhart](https://www.napier.ac.uk/people/neil-urquhart): [n.urquhart@napier.ac.uk](mailto:n.urquhart@napier.ac.uk), Lecturer of Computer Science\
-[Stewart Anderson](https://www.abdn.ac.uk/people/stewart.anderson): [stewart.anderson@abdn.ac.uk](mailto:stewart.anderson@abdn.ac.uk), PhD Candidate\
-[Robert Galloway](https://www.github.com/Veonms): [r.galloway@napier.ac.uk](mailto:r.galloway@napier.ac.uk), Research Assistant
+[Dr Stathis Tingas](https://www.napier.ac.uk/people/stathis-tingas): [e.tingas@napier.ac.uk](mailto:e.tingas@napier.ac.uk), Lecturer of Mathematics @ Edinburgh Napier University\
+[Dr Neil Urquhart](https://www.napier.ac.uk/people/neil-urquhart): [n.urquhart@napier.ac.uk](mailto:n.urquhart@napier.ac.uk), Lecturer of Computer Science @ Edinburgh Napier University\
+[Stewart Anderson](https://www.abdn.ac.uk/people/stewart.anderson): [stewart.anderson@abdn.ac.uk](mailto:stewart.anderson@abdn.ac.uk), PhD Candidate @ University of Aberdeen\
+[Robert Galloway](https://www.github.com/Veonms): [r.galloway@napier.ac.uk](mailto:r.galloway@napier.ac.uk), Research Assistant @ Edinburgh Napier University
