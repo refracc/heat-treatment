@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c44e1931-570c-4add-858b-6fd766bda63d" name="Changes" comment="EA now runs">
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/license.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +178,7 @@
       <workItem from="1673150079038" duration="2220000" />
       <workItem from="1673171000000" duration="1555000" />
       <workItem from="1673278416810" duration="7000" />
-      <workItem from="1673288340291" duration="4547000" />
+      <workItem from="1673288340291" duration="4793000" />
     </task>
     <task id="LOCAL-00001" summary="updated pom.xml to remove unused dependency.">
       <created>1669182360748</created>
