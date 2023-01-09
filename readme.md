@@ -8,6 +8,16 @@ The objective function is the euclidean distance of the time (t) and temperature
 ## Installation
 The [evolutionary algorithm](https://github.com/refracc/heat-treatment/tree/master/src/main/java/me/sanderson/ea) was developed in [Java 19](https://www.oracle.com/java/technologies/downloads/#java19) and the project can be compiled by using [Maven](https://maven.apache.org/) to have the code deployed on to a computer of higher specification. For ease, it is recommended that the project is opened in an Integrated Development Environment (IDE) such as [IntelliJ Idea](https://www.jetbrains.com/idea/download/) provided by JetBrains.
 
+You can run the project by completing the following steps:
+* Download this repository.
+* Extract the folders within.
+* Open the project in your favourite IDE.
+* Open the `EvolutionaryAlgorithm` class if you wish to run the evolutionary algorithm.
+    * If you wish to try out the hill climber, open the `HillClimber` class.
+* Press the green triangle at the side of the screen and let the program run!
+
+**NOTE:** You will need to install a Java Development Kit if you haven't already, I suggest the latest to be safe!
+
 ## Usage
 Most notably, the project contains a rather handy `Parameters` file, which controls how the code will execute upon compilation. There is an abridged version of this file below in the following code block.
 ```java
