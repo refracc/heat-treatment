@@ -36,7 +36,7 @@ public class Parameters {
      *  - TWO_POINT
      *  - UNIFORM
      */
-    public static Crossover CROSSOVER = Crossover.UNIFORM;
+    public static Crossover CROSSOVER = Crossover.ARITHMETIC;
 
     /* Control how the evolutionary algorithm controls the mutation process.
      * Possible values:

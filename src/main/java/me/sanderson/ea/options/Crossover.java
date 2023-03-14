@@ -107,6 +107,6 @@ public enum Crossover {
             child.getPoints().set(i, new Point(tempAverage, timeAverage, valueAverage));
         }
 
-        return Collections.singletonList(child);
+        return Arrays.asList(child);
     }
 }

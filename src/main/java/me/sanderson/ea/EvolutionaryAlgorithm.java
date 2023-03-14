@@ -19,7 +19,7 @@ public class EvolutionaryAlgorithm {
             case RANDOM -> Initialisation.random();
         };
 
-        for (int i = 0; i < Parameters.MAXIMUM_EVALUATIONS; i++) {
+        for (int i = 0; i < Integer.MAX_VALUE; i++) {
             best = getBestChromosome(population, i);
             Chromosome parent1 = new Chromosome();
             Chromosome parent2 = new Chromosome();
