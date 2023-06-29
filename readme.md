@@ -3,7 +3,7 @@ The Heat Treatment Optimisation Project contains a series of datasets which are 
 
 The objective function is the euclidean distance of the time (t) and temperature (T), which is given as below.
 
-![\Large E(t,T)=\sqrt{(T_2-T_1)^2+(t_2-t_1)^2}](https://latex.codecogs.com/svg.latex?\Large&space;E(t,T)=\sqrt{(T_2-T_1)^2+(t_2-t_1)^2})
+![(https://latex.codecogs.com/svg.latex?\Large&space;E(t,T)=\sqrt{(T_2-T_1)^2+(t_2-t_1)^2})](https://latex.codecogs.com/svg.image?E(t,&space;T)=\sqrt{\sum_{i=0}^{\infty}\left(t_i-T_i\right)^2})
 
 ## Installation
 The [evolutionary algorithm](https://github.com/refracc/heat-treatment/tree/master/src/main/java/me/sanderson/ea) was developed in [Java 19](https://www.oracle.com/java/technologies/downloads/#java19) and the project can be compiled by using [Maven](https://maven.apache.org/) to have the code deployed on to a computer of higher specification. For ease, it is recommended that the project is opened in an Integrated Development Environment (IDE) such as [IntelliJ Idea](https://www.jetbrains.com/idea/download/) provided by JetBrains.
